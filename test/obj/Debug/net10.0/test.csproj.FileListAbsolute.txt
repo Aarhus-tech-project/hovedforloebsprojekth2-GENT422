@@ -167,3 +167,4 @@ C:\dev\test\test\obj\Debug\net10.0\compressed\5kvtw5gp9z-{0}-x2ay83knxo-x2ay83kn
 C:\dev\test\test\obj\Debug\net10.0\compressed\ejhwpuvqj9-{0}-nybfhrvvxc-nybfhrvvxc.gz
 C:\dev\test\test\obj\Debug\net10.0\compressed\ph9pdrbxq9-{0}-ojo9l1ld9x-ojo9l1ld9x.gz
 C:\dev\test\test\obj\Debug\net10.0\compressed\dluna92z68-{0}-5oh2uxyx8p-5oh2uxyx8p.gz
+C:\dev\test\test\obj\Debug\net10.0\test.sourcelink.json
