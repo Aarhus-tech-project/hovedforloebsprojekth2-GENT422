@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Reservation System</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('venues')">
+                Alle steder
+            </button>
+
+            <button class="tab-btn" onclick="showTab('createVenue')">
+                Opret lokation
+            </button>
+
+            <button class="tab-btn" onclick="showTab('reservations')">
+                Reservationer
+            </button>
+
+            <button class="tab-btn" onclick="showTab('createReservation')">
+                Ny reservation
+            </button>
+        </div>
+
+        <!-- VENUES -->
+        <div id="venues" class="tab-content active-tab">
+            <h2>Alle lokationer</h2>
+
+            <div id="venueList"></div>
+        </div>
+
+        <!-- CREATE VENUE -->
+        <div id="createVenue" class="tab-content">
+
+            <h2>Opret ny lokation</h2>
+
+            <div class="form-group">
+                <label>Navn</label>
+                <input type="text" id="venueName">
+            </div>
+
+            <div class="form-group">
+                <label>Type</label>
+
+                <select id="venueType">
+                    <option value="">Vælg type</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Cinema">Cinema</option>
+                    <option value="Airplane">Airplane</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Kapacitet</label>
+                <input type="number" id="venueCapacity">
+            </div>
+
+            <button onclick="createVenue()">
+                Opret lokation
+            </button>
+
+        </div>
+
+        <!-- RESERVATIONS -->
+        <div id="reservations" class="tab-content">
+
+            <h2>Reservationer</h2>
+
+            <div id="reservationList"></div>
+
+        </div>
+
+        <!-- CREATE RESERVATION -->
+        <div id="createReservation" class="tab-content">
+
+            <h2>Ny reservation</h2>
+
+            <div class="form-group">
+                <label>Lokation</label>
+
+                <select id="reservationVenue">
+                    <option value="">Vælg lokation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Kundenavn</label>
+                <input type="text" id="customerName">
+            </div>
+
+            <div class="form-group">
+                <label>Antal pladser</label>
+                <input type="number" id="seatCount">
+            </div>
+
+            <button onclick="createReservation()">
+                Opret reservation
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/venue.js"></script>
+    <script src="js/reservation.js"></script>
+
+</body>
+</html>
